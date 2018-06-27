@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## ----------------------------------------------------------------------------------
+## This function creates the global object that contains the cache for the inverse
+## ----------------------------------------------------------------------------------
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -20,7 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## ----------------------------------------------------------------------------------
+## This function calls the value from the cache if exists or calculates it and save
+## in the cache if it does not exist.
+## ----------------------------------------------------------------------------------
 
 cacheSolve <- function(x, ...) {
        inv <- x$getInv()
